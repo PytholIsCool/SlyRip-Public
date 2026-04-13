@@ -1,0 +1,122 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="SlyRip.App"
+             RequestedThemeVariant="Default">
+
+	<Application.Resources>
+		<Color x:Key="ColorPrimary">#ffffff</Color>
+		<Color x:Key="ColorSecondary">#ffffff</Color>
+		<Color x:Key="ColorBackground">#0e0e0e</Color>
+		<Color x:Key="ColorAltBackground">#0b0b0b</Color>
+		<Color x:Key="ColorHover">#505050</Color>
+		<Color x:Key="ColorPressed">#0b0b0b</Color>
+		<Color x:Key="ColorTransparent">#00000000</Color>
+
+		<SolidColorBrush x:Key="BrushPrimary" Color="{StaticResource ColorPrimary}" />
+		<SolidColorBrush x:Key="BrushSecondary" Color="{StaticResource ColorSecondary}" />
+		<SolidColorBrush x:Key="BrushBackground" Color="{StaticResource ColorBackground}" />
+		<SolidColorBrush x:Key="BrushAltBackground" Color="{StaticResource ColorAltBackground}" />
+		<SolidColorBrush x:Key="BrushHover" Color="{StaticResource ColorHover}" />
+		<SolidColorBrush x:Key="BrushPressed" Color="{StaticResource ColorPressed}" />
+		<SolidColorBrush x:Key="BrushTransparent" Color="{StaticResource ColorTransparent}" />
+
+	</Application.Resources>
+
+    <Application.Styles>
+        <!-- Button -->
+		<Style Selector="Button.button">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Foreground" Value="{DynamicResource BrushPrimary}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource BrushTransparent}"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="CornerRadius" Value="8"/>
+			<Setter Property="Padding" Value="8 4"/>
+			<Setter Property="Cursor" Value="Hand"/>
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+
+		<Style Selector="Button.button:pointerover">
+			<Setter Property="Background" Value="{DynamicResource BrushHover}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource BrushPrimary}"/>
+		</Style>
+
+		<Style Selector="Button.button:pressed">
+			<Setter Property="Background" Value="{DynamicResource BrushPressed}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource BrushSecondary}"/>
+		</Style>
+
+		<!-- Icon Button -->
+		<Style Selector="Button.iconButton">
+			<Setter Property="Width" Value="28"/>
+			<Setter Property="Height" Value="28"/>
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Foreground" Value="{DynamicResource BrushPrimary}"/>
+			<Setter Property="BorderThickness" Value="0"/>
+			<Setter Property="CornerRadius" Value="10"/>
+			<Setter Property="Padding" Value="0"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+			<Setter Property="Cursor" Value="Hand"/>
+		</Style>
+
+		<Style Selector="Button.iconButton:pointerover">
+			<Setter Property="Background" Value="{DynamicResource BrushHover}"/>
+		</Style>
+
+		<Style Selector="Button.iconButton:pressed">
+			<Setter Property="Background" Value="{DynamicResource BrushPressed}"/>
+		</Style>
+
+		<!-- Checkbox -->
+		<Style Selector="CheckBox.checkbox">
+			<Setter Property="FontSize" Value="14"/>
+			<Setter Property="Foreground" Value="{DynamicResource BrushPrimary}"/>
+			<Setter Property="Background" Value="{DynamicResource BrushBackground}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource BrushSecondary}"/>
+			<Setter Property="BorderThickness" Value="1"/>
+			<Setter Property="Padding" Value="6 2"/>
+			<Setter Property="Cursor" Value="Hand"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="VerticalAlignment" Value="Center"/>
+		</Style>
+
+		<Style Selector="CheckBox.checkbox:pointerover">
+			<Setter Property="Background" Value="{DynamicResource BrushHover}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource BrushPrimary}"/>
+		</Style>
+
+		<Style Selector="CheckBox.checkbox:pressed">
+			<Setter Property="Background" Value="{DynamicResource BrushPressed}"/>
+			<Setter Property="BorderBrush" Value="{DynamicResource BrushSecondary}"/>
+		</Style>
+
+		<!-- Text -->
+		<Style Selector="TextBlock.text">
+			<Setter Property="FontSize" Value="20"/>
+			<Setter Property="Foreground" Value="{DynamicResource BrushPrimary}"/>
+			<Setter Property="TextAlignment" Value="Center"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+			<Setter Property="FontFamily" Value="Aster"/>
+		</Style>
+
+		<!-- Link -->
+		<Style Selector="TextBlock.link">
+			<Setter Property="Foreground" Value="#4AA8FF"/>
+			<Setter Property="TextDecorations" Value="Underline"/>
+			<Setter Property="Cursor" Value="Hand"/>
+			<Setter Property="FontSize" Value="18"/>
+		</Style>
+
+		<Style Selector="TextBlock.link:pointerover">
+			<Setter Property="Foreground" Value="#82CFFF"/>
+		</Style>
+
+		<Style Selector="TextBlock.link:pressed">
+			<Setter Property="Foreground" Value="#2D8BE0"/>
+		</Style>
+    </Application.Styles>
+
+</Application>

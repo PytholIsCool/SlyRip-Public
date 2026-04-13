@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="800" d:DesignHeight="500"
+        Width="800" Height="500"
+        MinWidth="500" MinHeight="300"
+        MaxWidth="1000" MaxHeight="600"
+        x:Class="SlyRip.MainWindow"
+        Title="SlyRip - Public"
+        
+        WindowDecorations="None"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        Background="Transparent">
+
+    <Border CornerRadius="10" Background="{DynamicResource BrushBackground}" Opacity="0.9" ClipToBounds="True">
+        <Grid RowDefinitions="35,*">
+
+            <!-- Title bar -->
+            <Border Background="{DynamicResource BrushAltBackground}" Grid.Row="0" PointerPressed="OnDrag">
+                <Grid ColumnDefinitions="Auto,*,Auto,Auto">
+                    <Button Classes="iconButton" Grid.Column="0" HorizontalAlignment="Left" Margin="10" Click="OnFolderOpen">
+                        <Image Source="avares://SlyRip/Assets/folder-open.png" Width="28" Height="28"/>
+                    </Button>
+
+                    <TextBlock Classes="text" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="SlyRip" FontSize="15"/>
+
+                    <Button Classes="iconButton" Grid.Column="2" HorizontalAlignment="Right" Margin="10" Click="OnMinimise">
+						<Image Source="avares://SlyRip/Assets/minus.png" Width="14" Height="14"/>
+                    </Button>
+
+                    <Button Classes="iconButton" Grid.Column="3" HorizontalAlignment="Right" Margin="10" Click="OnClose">
+						<Image Source="avares://SlyRip/Assets/cross-small.png" Width="20" Height="20"/>
+                    </Button>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" RowDefinitions="*,Auto">
+                <!-- Console -->
+                <Border Grid.Row="0" Margin="10,10,10,5" Background="{DynamicResource BrushAltBackground}" CornerRadius="6">
+                    <TextBlock x:Name="ConsoleOutput" TextWrapping="Wrap" FontFamily="Consolas" FontSize="13" Text=">_" Foreground="{DynamicResource BrushPrimary}" Background="Transparent" Padding="10"/>
+                </Border>
+                
+                <!-- Controls -->
+                <Border Grid.Row="1" Margin="10,5,10,10" Background="{DynamicResource BrushAltBackground}" CornerRadius="6" Padding="10">
+                    <Grid ColumnDefinitions="Auto,Auto,Auto" ColumnSpacing="5">
+                        <Button Classes="button" Grid.Column="0" Padding="10" Content="Open VRC Cache" Click="OnOpenVRCCache"/>
+                        <Button Classes="button" Grid.Column="1" Padding="10" Content="Clear Avatar Output" Click="OnClearAvis"/>
+                        <Button Classes="button" Grid.Column="2" Padding="10" Content="Clear World Output" Click="OnClearWorlds"/>
+                    </Grid>
+                </Border>
+            </Grid>
+
+        </Grid>
+
+    </Border>
+</Window>
