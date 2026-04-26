@@ -9,6 +9,7 @@
         MaxWidth="1000" MaxHeight="600"
         x:Class="SlyRip.MainWindow"
         Title="SlyRip - Public"
+        Icon="avares://SlyRip/Assets/SlyRip.ico"
         
         WindowDecorations="None"
         ExtendClientAreaToDecorationsHint="True"

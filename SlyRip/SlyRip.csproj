@@ -5,16 +5,19 @@
     <Nullable>enable</Nullable>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationIcon>Assets\SlyRip.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Assets\cross-small.png" />
     <None Remove="Assets\folder-open.png" />
     <None Remove="Assets\minus.png" />
+    <None Remove="Assets\SlyRip.ico" />
   </ItemGroup>
   <ItemGroup>
     <AvaloniaResource Include="Assets\cross-small.png" />
     <AvaloniaResource Include="Assets\folder-open.png" />
     <AvaloniaResource Include="Assets\minus.png" />
+    <AvaloniaResource Include="Assets\SlyRip.ico" />
   </ItemGroup>
 
   <ItemGroup>
