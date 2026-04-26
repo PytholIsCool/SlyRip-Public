@@ -16,6 +16,11 @@
 > Just a quick note, this is intended for use with Hexedware's VRChat Internal but this will work with more things than just that
 - .Net 9 or greater
 
+## Usage
+
+- Launch SlyRip BEFORE you launch your VRChat.
+- That's it! The rest is done for you.
+
 ## Release Notes
 
 Before I get people saying that it's broken because it can't find their cache, this assumes you're using the default VRChat cache location. I don't feel like changing it.
@@ -35,4 +40,4 @@ Buy now!
 **Have fun ripping!**
 
 ## Special thanks:
-Sly <3
+Sly
