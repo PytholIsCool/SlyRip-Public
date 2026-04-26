@@ -1,3 +1,9 @@
+# SlyRip
+
+<p align="center">
+  <img width="1000" height="1000" alt="SlyRip" src="https://github.com/user-attachments/assets/e6099994-717b-4b88-b498-fceeaff7e7e2" />
+</p>
+
 ## Features
 
 - "External" world and avatar ripping
