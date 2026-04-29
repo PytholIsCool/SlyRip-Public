@@ -34,6 +34,11 @@ public partial class MainWindow : Window {
         if (!Directory.Exists(path))
             Directory.CreateDirectory(path);
 
+        // yes, this is how i tested if the log fix worked and now im keeping it because i think its funny
+        //for (int i = 0; i < 100; i++) {
+        //    Log($"Balls {i}");
+        //}
+
         FilePicker.OpenPath(path);
     }
 
@@ -43,7 +48,7 @@ public partial class MainWindow : Window {
     #endregion
 
     #region Console
-    private const int MaxLines = 100; // adjust as needed
+    private const int MaxLines = 12;
     void Log(object msg) {
         var text = msg?.ToString() ?? string.Empty;
 
