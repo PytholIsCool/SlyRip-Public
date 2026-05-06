@@ -22,7 +22,7 @@ internal static class FilePicker {
                 if (mainWindow?.StorageProvider is { CanPickFolder: true } storage) {
                     var folders = await storage.OpenFolderPickerAsync(new FolderPickerOpenOptions {
                         AllowMultiple = false,
-                        Title = "Select your Yandere Simulator game path."
+                        Title = "Select your path."
                     });
 
                     return folders.Count > 0 ? folders[0].Path.LocalPath : null;
